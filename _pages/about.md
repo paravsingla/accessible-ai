@@ -1,6 +1,6 @@
 ---
 layout: page
-title: accessible ai - making artificial intelligence accessible for everyone
+title: about accessible ai
 permalink: /about
 comments: false
 ---

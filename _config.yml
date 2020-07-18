@@ -62,7 +62,7 @@ adsense-data-ad-slot: ""
 lazyimages: "disabled"
 
 # Post Author Box ("enabled" or "disabled")
-authorbox: "disabled"
+authorbox: "enabled"
 
 # Sass
 sass:
