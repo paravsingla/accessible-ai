@@ -4,12 +4,10 @@ layout: default
 permalink: "/podcast.html"
 ---
 
-
 {% for category in site.categories %}
-<!-- {% if category[0] == "podcast" %} -->
-<h4 class="mt-5 mb-neg-30" id="{{ category[0] | replace: " ","-" }}"><span class="text-capitalize badge badge-primary text-small">{{ category[0] }}</span></h4>
+{% if category[0] == "Podcast" %}
+<h4 class="mt-5 mb-neg-30" id="{{ category[0] | replace: " ","-" }}"><span class="text-capitalize badge badge-primary text-small">Podcast Episodes</span></h4>
 <div class="blog-grid-container">
-<h1>{{category[0]}}</h1>
 {% assign pages_list = category[1] %}
 {% for post in pages_list %}
 {% if post.title != null %}
@@ -21,5 +19,5 @@ permalink: "/podcast.html"
 {% assign pages_list = nil %}
 {% assign group = nil %}
 </div>
-<!-- {% endif %} -->
+{% endif %}
 {% endfor %}
